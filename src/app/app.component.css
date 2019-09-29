@@ -1,0 +1,64 @@
+.nav{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid black;
+}
+
+.icon{
+    width: 225px;
+    height: 225px;
+    background: linear-gradient(278.41deg, #51E24E 2.23%, #21DFA6 45.25%, #0DE5F2 90.8%);
+    border-radius: 0px 0px 50px 0px;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 176px;
+    color: #FDFDFD;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+.links{
+    display: inline-block;
+    width: 20%;
+    margin: 2% 0% 3% 60%;
+}
+
+.git{
+    background: url(../assets/icons8-github-100.png);
+}
+.linkedin{
+    background: url(../assets/icons8-linkedin-96.png);
+}
+.behance{
+    background: url(../assets/icons8-behance-96.png);
+}
+
+.link{
+    height: 4vh;
+    width: 4vh;
+    background-position: center;
+    background-size: 4vh;
+    display: inline-block;
+    margin: 5% 10%;
+}
+
+.hero{    
+    width: 100%;
+    transform: translate(0,-50%);
+}
+.title{
+    background: -webkit-linear-gradient(278.41deg, #51E24E 2.23%, #21DFA6 45.25%, #0DE5F2 90.8%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 72px;
+}
+ 
+.container{
+    width: 60%;
+    margin: 17% auto;
+}
