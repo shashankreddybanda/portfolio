@@ -75,12 +75,11 @@
 .skills{
     width: 100%;
     background: #f9f9f9;
-    padding-top: 40px;
+    padding: 40px 0px;
 }
 
 .head{
     font-weight: 700;
     font-size: 48px;
     text-decoration: underline;
-    margin-bottom: 40px;
 }
