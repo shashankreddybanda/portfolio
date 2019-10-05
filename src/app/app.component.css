@@ -3,29 +3,24 @@
     padding: 0px;
     margin: 0px;
     border: 0px solid black;
+    display: grid;
+    grid-template-columns: 15fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .icon{
-    display: inline-block;
-    width: 225px;
-    height: 225px;
+    width: 15vw;
+    height: 15vw;
     background: linear-gradient(278.41deg, #51E24E 2.23%, #21DFA6 45.25%, #0DE5F2 90.8%);
     border-radius: 0px 0px 50px 0px;
     font-weight: bold;
-    font-size: 144px;
-    line-height: 176px;
+    font-size: 7vw;
     color: #FDFDFD;
-    padding: 0px;
+    padding-top: 20px;
     margin-top: 0px;
-    margin-right: 50%;
     margin-bottom: 0px;
     margin-left: 0px;
     text-align: center;
-}
-
-.links{
-    display: inline-block;
-    width: 20%;
 }
 
 .git{
@@ -58,18 +53,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 4vw;
 }
 
 .caption{
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3vw;
     color: rgba(0, 0, 0, 0.66);
 }
  
 .container{
     width: 60%;
-    margin: 0px auto; 
+    margin: 0px auto;
 }
 
 .skills{
@@ -82,4 +77,45 @@
     font-weight: 700;
     font-size: 48px;
     text-decoration: underline;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.skill{
+    margin: 20px auto;
+}
+
+.footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1vw;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.footer-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+@media(max-width: 1400px){
+    .skill-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 800px){
+    .skill-list{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .nav{
+        grid-template-columns: 5fr 1fr 1fr 1fr;
+    }
 }
