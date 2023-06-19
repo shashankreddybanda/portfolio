@@ -10,7 +10,8 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 	</div>
 	<div class='main-section'>
-		<h1 class='hi'>Hi,</h1>
+		<h1 class='hi'>Hi,👋🏻</h1>
+		<p class='hero-text'> I'm <span class='sha'>Shashank</span>, I'm a software engineer with over 3+ years of experience</p>
 	</div>
 	</main>
 </Layout>
@@ -23,7 +24,7 @@ import Layout from '../layouts/Layout.astro';
 	h1 {
 		font-size: 80px;
 		font-weight: 800;
-		margin-top: 100px;
+		margin: 0;
 	}
 	.logo{
 		width: 100px;
@@ -41,6 +42,25 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0;
 		padding: 0;
 		width: 100px;
-		height: 100px;
+	}
+	.main-section{
+		padding-top: 100px;
+		width: 100%;
+	}
+	.sha{
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 75px;
+		letter-spacing: 0.062em;
+		text-align: left;
+		color: #225DBA;
+	}
+	.hero-text{
+		font-size: 60px;
+		font-weight: 100;
+		line-height: 75px;
+		letter-spacing: 0.062em;
+		text-align: left;
+		margin: 0;
 	}
 </style>
