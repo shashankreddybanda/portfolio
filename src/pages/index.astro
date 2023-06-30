@@ -1,76 +1,295 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Shashank Reddy Banda">
-	<main>
-	<div>
-	<div class='logo-box'>
-		<span class = 'logo'>S</span>
+	<div class="LogoBar">
+		<div class="logo-box">
+			<p class="logo">S</p>
+		</div>
 	</div>
+	<div class="main-section">
+		<h1 class="hi">Hi,👋🏻</h1>
+		<p class="hero-text">
+			I'm <span class="sha">Shashank</span>, I'm a software engineer with
+			over 3+ years of experience
+		</p>
 	</div>
-	<div class='main-section'>
-		<h1 class='hi'>Hi,👋🏻</h1>
-		<p class='hero-text'> I'm <span class='sha'>Shashank</span>, I'm a software engineer with over 3+ years of experience</p>
+	<div class="exp">
+		<ul class="exp-card-list">
+			<li class="exp-card">July 2020</li>
+			<li class="exp-card">Mar 2020</li>
+			<li class="exp-card">test</li>
+			<li class="exp-card">test</li>
+		</ul>
+		<ul class="time-line">
+			<li class="time">July 2020</li>
+			<li class="time">June 2020</li>
+			<li class="time">Mar 2020</li>
+			<li class="time">June 2020</li>
+		</ul>
 	</div>
-	<div class='exp'>
-		<div class='time-line'>A B C D</div>
+	<div class="project-section">
+		<ul class="line">
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">
+					lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor
+					lorem ipsum del lor
+				</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+		</ul>
+		<ul class="line">
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">
+					lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor
+					lorem ipsum del lor
+				</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+			<li class="project">
+				<p class="project-title">Lorem Ipsum</p>
+				<div class="project-lables">
+					<p class="project-lable">test</p>
+					<p class="project-lable">test</p>
+				</div>
+				<p class="project-description">lorem ipsum del lor</p>
+			</li>
+		</ul>
 	</div>
-	</main>
+	<div class="footer">
+		<ul class="links">
+			<li class="link twitter">Twitter</li>
+			<li class="link gihub">GitHub</li>
+			<li class="link mail">Email</li>
+			<li class="link linkedin">LinkedIn</li>
+		</ul>
+	</div>
 </Layout>
 
 <style>
-	main {
-		padding: 5rem;
-		color: #D5E4FA;
-	}
-	h1 {
-		font-size: 80px;
+	.hi {
+		font-size: 5rem;
 		font-weight: 800;
 		margin: 0;
+		padding: 0;
 	}
-	.logo{
-		width: 100px;
-		height: 100px;
-		font-size: 80px;
-		font-weight: 900;
-		color: #225DBA;
-		margin-left: 25px;
+	.LogoBar {
+		display: flex;
+		padding: 0.625rem var(--main-padding, 8rem);
+		align-items: center;
+		gap: 0.625rem;
+		align-self: stretch;
 	}
-	.logo-box{
-		border: 8px solid #F40076;
+	.logo-box {
+		display: flex;
+		width: 6.25rem;
+		height: 6.25rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.625rem;
+		border: 8px solid #f40076;
 		border-radius: 5px;
 	}
-	div{
-		margin: 0;
-		padding: 0;
-		width: 100px;
+	.logo {
+		font-size: 80px;
+		font-weight: 900;
+		color: #225dba;
 	}
-	.main-section{
-		padding-top: 200px;
-		width: 100%;
+	.main-section {
+		display: flex;
+		padding: var(--hero-top-padding, 16rem) var(--main-padding, 8rem);
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.5rem;
 	}
-	.sha{
+	.sha {
 		font-size: 60px;
 		font-weight: 700;
 		line-height: 75px;
 		letter-spacing: 0.062em;
 		text-align: left;
-		color: #225DBA;
+		color: #225dba;
 	}
-	.hero-text{
-		font-size: 60px;
+	.hero-text {
+		padding: 0;
+		font-size: 3rem;
 		font-weight: 100;
-		line-height: 75px;
-		letter-spacing: 0.062em;
-		text-align: left;
+		letter-spacing: 0.186rem;
 		margin: 0;
 	}
-	.exp{
-		pading-top: 200px;
-	}
-	.time-line{
+	.exp {
+		display: flex;
 		width: 100%;
-		background: #F40076;
+		padding: 5.25rem 0rem;
+		margin: 0%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+	.time-line {
+		background: #f40076;
+		display: flex;
+		padding: 1.5rem var(--main-padding, 8rem);
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+	}
+	.time {
+		display: flex;
+		width: 12.5rem;
+		height: 9.75rem;
+		flex-direction: column;
+		justify-content: center;
+		color: #ffdaec;
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 900;
+		line-height: 6rem;
+		letter-spacing: 0.06rem;
+	}
+	.exp-card-list {
+		display: flex;
+		padding: 0rem var(--main-padding, 8rem);
+		justify-content: space-between;
+		align-items: center;
+		align-self: stretch;
+	}
+	.exp-card {
+		display: flex;
+		width: 12.5rem;
+		height: 12.5rem;
+		padding: 0rem 1rem;
+		align-items: center;
+		border-radius: 5px;
+		border: 5px solid var(--project-main-secondary-400, #f40076);
+	}
+	.hide {
+		opacity: 0%;
+	}
+	.project-section {
+		display: flex;
+		padding: 5rem var(--main-padding, 8rem);
+		flex-direction: column;
+		align-items: center;
+		gap: 0.625rem;
+		align-self: stretch;
+	}
+	.line {
+		display: flex;
+		padding: 0.625rem 0rem;
+		justify-content: space-between;
+		align-items: stretch;
+		align-self: stretch;
+		list-style: none;
+		margin: 0;
+	}
+	.project {
+		display: flex;
+		width: 15.5rem;
+		padding: 1.5rem 1rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+		border-radius: 5px;
+		border-bottom: 5px solid var(--project-main-secondary-400, #f40076);
+		background: var(--project-main-primary-500, #003587);
+	}
+	.project-title {
+		margin: 0;
+		display: flex;
+		width: 8.9375rem;
+		height: 1.5625rem;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: 1.125rem;
+		letter-spacing: 0.015rem;
+	}
+	.project-lables {
+		margin: 0;
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+	.project-lable {
+		margin: 0;
+		display: flex;
+		padding: 0.125rem 0.25rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.25rem;
+		border-radius: 4px;
+		background: var(--project-main-primary-100, #e4efff);
+	}
+	.footer {
+		display: flex;
+		padding: 2.5rem 0rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+		align-self: stretch;
+	}
+	.links {
+		padding: 0%;
+		list-style: none;
+	}
+	.link {
+		display: flex;
+		padding: 0rem var(--main-padding, 8rem);
+		align-items: center;
+		gap: 1rem;
+		align-self: stretch;
 	}
 </style>
