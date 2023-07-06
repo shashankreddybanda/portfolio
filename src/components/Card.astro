@@ -8,56 +8,70 @@ export interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
+<li class="project">
+	<p class="project-title">{title}</p>
+	<div class="project-lables">
+		<p class="project-lable">{href}</p>
+		<p class="project-lable">test</p>
+	</div>
+	<p class="project-description">{body}</p>
 </li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.25rem;
-		background-color: white;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 0.6rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-	}
 
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
+<style>
+	.project {
+		display: flex;
+		width: 15.5rem;
+		padding: 1.5rem 1rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+		border-radius: 5px;
+		border-bottom: 5px solid var(--project-main-secondary-400, #f40076);
+		background: var(--project-main-primary-500, #003587);
 	}
-	h2 {
+	.project-title {
 		margin: 0;
+		display: flex;
+		width: 8.9375rem;
+		height: 1.5625rem;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
 		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		font-weight: 600;
+		line-height: 1.125rem;
+		letter-spacing: 0.015rem;
 	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
+	.project-lables {
+		margin: 0;
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
 	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
+	.project-lable {
+		margin: 0;
+		display: flex;
+		padding: 0.125rem 0.25rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.25rem;
+		border-radius: 4px;
+		background: var(--project-main-primary-100, #e4efff);
 	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
+	@media screen and (max-width: 1450px) {
+		.project {
+			width: 20%;
+			padding: 1.5rem 1rem;
+			gap: 0.5rem;
+		}
+		.project-title {
+			margin: 0;
+			width: 8.9375rem;
+			height: 1.5625rem;
+			font-size: 1.25rem;
+			font-weight: 600;
+			line-height: 1.125rem;
+			letter-spacing: 0.015rem;
+		}
 	}
 </style>

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 var darkMode = false;
 ---
 
@@ -18,98 +19,44 @@ var darkMode = false;
 	</div>
 	<div class="exp">
 		<ul class="exp-card-list">
-			<li class="exp-card">July 2020</li>
-			<li class="exp-card">Mar 2020</li>
-			<li class="exp-card">test</li>
-			<li class="exp-card">test</li>
+			<li class="exp-card">
+				<p>Software</br> Developement</br> Intern at </br><span class = "servicenow">ServiceNow</span></p>
+			</li>
+			<li class="exp-card">
+				<p>Associate </br>Software Engineer at</br> <span class = "servicenow">ServiceNow</span></p>
+			</li>
+			<li class="exp-card">
+				<p>Software Developement Inter at <span class = "servicenow">ServiceNow</span></p>
+			</li>
+			<li class="exp-card">
+				<p>Graduate Peer Career Coach at <span class="asu">ASU</span></p>
+			</li>
 		</ul>
 		<ul class="time-line">
-			<li class="time">July 2020</li>
+			<li class="time">July 2019</li>
 			<li class="time">June 2020</li>
-			<li class="time">Mar 2020</li>
-			<li class="time">June 2020</li>
+			<li class="time">Mar 2022</li>
+			<li class="time">June 2023</li>
 		</ul>
 	</div>
 	<div class="project-section">
 		<ul class="line">
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">
-					lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor
-					lorem ipsum del lor
-				</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
 		</ul>
 		<ul class="line">
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">
-					lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor
-					lorem ipsum del lor
-				</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
-			<li class="project">
-				<p class="project-title">Lorem Ipsum</p>
-				<div class="project-lables">
-					<p class="project-lable">test</p>
-					<p class="project-lable">test</p>
-				</div>
-				<p class="project-description">lorem ipsum del lor</p>
-			</li>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
+			<Card title="Design System" body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor" href="test"/>
 		</ul>
 	</div>
 	<div class="footer">
 		<ul class="links">
 			<li class="link twitter">Twitter</li>
-			<li class="link gihub">GitHub</li>
+			<li class="link github">GitHub</li>
 			<li class="link mail">Email</li>
 			<li class="link linkedin">LinkedIn</li>
 		</ul>
@@ -214,6 +161,13 @@ var darkMode = false;
 		border-radius: 5px;
 		border: 5px solid var(--project-main-secondary-400, #f40076);
 	}
+	.servicenow{
+		display: inline;
+		color: #14C96B;
+	}
+	.asu{
+		color: #FF7D00;
+	}
 	.hide {
 		opacity: 0%;
 	}
@@ -234,63 +188,57 @@ var darkMode = false;
 		list-style: none;
 		margin: 0;
 	}
-	.project {
-		display: flex;
-		width: 15.5rem;
-		padding: 1.5rem 1rem;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.5rem;
-		border-radius: 5px;
-		border-bottom: 5px solid var(--project-main-secondary-400, #f40076);
-		background: var(--project-main-primary-500, #003587);
-	}
-	.project-title {
-		margin: 0;
-		display: flex;
-		width: 8.9375rem;
-		height: 1.5625rem;
-		flex-direction: column;
-		justify-content: center;
-		color: #fff;
-		font-size: 1.25rem;
-		font-weight: 600;
-		line-height: 1.125rem;
-		letter-spacing: 0.015rem;
-	}
-	.project-lables {
-		margin: 0;
-		display: flex;
-		align-items: flex-start;
-		gap: 0.5rem;
-	}
-	.project-lable {
-		margin: 0;
-		display: flex;
-		padding: 0.125rem 0.25rem;
-		justify-content: center;
-		align-items: center;
-		gap: 0.25rem;
-		border-radius: 4px;
-		background: var(--project-main-primary-100, #e4efff);
-	}
 	.footer {
 		display: flex;
 		padding: 2.5rem 0rem;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 1rem;
 		align-self: stretch;
 	}
 	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 		padding: 0%;
 		list-style: none;
+		width: 100%;
+		gap: 1rem;
 	}
 	.link {
 		display: flex;
 		padding: 0rem var(--main-padding, 8rem);
 		align-items: center;
-		gap: 1rem;
 		align-self: stretch;
+		font-size: 1.5rem;
+		font-weight: 200;
+		line-height: 3rem;
+	}
+	.twitter{
+		background: var(--project-main-primary-400, #0D47A1);
+		color: #FFF;
+	}
+	.github{
+		background: var(--project-main-primary-400, #14C96B);
+		color: #DB006A;
+	}
+	.mail{
+		background: var(--project-main-primary-400, #FF8A1A);
+		color:#FFF;
+	}
+	.linkedin{
+		background: var(--project-main-primary-400, #F40076);
+		color: #010F26;
+	}
+	@media screen and (max-width: 1450px) {
+		.time {
+			width: 20%;
+			height: 20%;
+			font-size: 3.5rem;
+			line-height: 5rem;
+			letter-spacing: 0.06rem;
+		}
+		.exp-card {
+			width: 15%;
+		}
 	}
 </style>
