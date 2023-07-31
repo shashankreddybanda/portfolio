@@ -1,4 +1,5 @@
 ---
+import QRCode from "../../public/images/QRCode.png";
 export interface Props {
   title: string;
   body: string;
@@ -9,7 +10,7 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="project">
-  <img src="./public/images/QRCode.png" />
+  <img src={QRCode} />
   <div class="project-content">
     <p class="project-title">{title}</p>
     <p class="project-description">{body}</p>
