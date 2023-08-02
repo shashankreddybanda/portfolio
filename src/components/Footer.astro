@@ -124,8 +124,8 @@
 <style>
   .footer {
     display: flex;
-    height: 36.5625rem;
-    padding: 5rem var(--main-padding, 8rem);
+    min-height: 36.5625rem;
+    padding: 4rem min(var(--main-padding, 8rem), 8vw);
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -141,7 +141,6 @@
   }
   .footer-text {
     display: flex;
-    width: 24.375rem;
     flex-direction: column;
     justify-content: center;
     color: var(--project-main-secondary-200, #fb5eaa);
@@ -150,6 +149,10 @@
     font-weight: 800;
     line-height: 2.6875rem; /* 119.444% */
     letter-spacing: 0.027rem;
+    padding-right: 50%;
+  }
+  .circle {
+
   }
   .links {
     display: flex;
@@ -196,8 +199,12 @@
     .circle {
       display: none;
     }
-    .footer-text {
-      width: 100%;
+    .links-list {
+      flex-direction: column;
+      gap: 0.5rem;
     }
+    .footer-text {
+    padding-right: 0px;
+  }
   }
 </style>

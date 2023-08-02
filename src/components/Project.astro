@@ -43,7 +43,7 @@ import Card from "../components/Card.astro";
 <style>
   .project-section {
     display: flex;
-    padding: 8rem var(--main-padding, 8rem);
+    padding: 8rem min(var(--main-padding, 8rem), 8vw);
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;

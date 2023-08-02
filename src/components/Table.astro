@@ -10,7 +10,7 @@
     <tr>
       <th class="tg-0pky">Year</th>
       <th class="tg-0pky">Project</th>
-      <th class="tg-0lax">Description</th>
+      <th class="description">Description</th>
       <th class="tg-0lax">Tech</th>
       <th class="tg-0lax">Link</th>
     </tr>
@@ -31,7 +31,6 @@
 <style>
   table {
     border-collapse: collapse;
-    width: 100%;
   }
   th {
     text-align: left;
@@ -70,5 +69,10 @@
     font-weight: 400;
     line-height: 1rem; /* 100% */
     letter-spacing: 0.012rem;
+  }
+  @media screen and (max-width: 1200px) {
+    .description{
+        display: none;
+    }
   }
 </style>
