@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Table from "../components/Table.astro";
+var darkMode = false;
+---
+
+<Layout title="Projects - Shashank Reddy Banda">
+  <div class="projects">
+    <div class="hearder">
+      <a href="javascript:history.back()" class="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M21.5 12H5"
+            stroke="#DB006A"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M12 19L5 12L12 5"
+            stroke="#DB006A"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <p class="portfolio">Portfolio</p>
+      </a>
+      <div class="title">All Projects</div>
+    </div>
+    <Table />
+  </div>
+</Layout>
+<style>
+  .projects {
+    display: flex;
+    padding: var(--main-padding, 8rem);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0%;
+  }
+  .back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  .portfolio {
+    color: var(--project-main-secondary-500, #db006a);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 100% */
+    letter-spacing: 0.012rem;
+  }
+  .title {
+    color: #fff;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.1875rem; /* 97.222% */
+    letter-spacing: 0.027rem;
+  }
+  
+</style>

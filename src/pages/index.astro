@@ -1,17 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Exp from "../components/Exp.astro";
-import Footer from "../components/Footer.astro";
+import Project from "../components/Project.astro";
 var darkMode = false;
 ---
 
 <Layout title="Shashank Reddy Banda">
-  <div class="LogoBar">
-    <div class="logo-box">
-      <p class="logo">S</p>
-    </div>
-  </div>
   <div class="main-section">
     <h1 class="hi">Hi,👋🏻</h1>
     <p class="hero-text">
@@ -20,21 +14,7 @@ var darkMode = false;
     </p>
   </div>
   <Exp />
-  <div class="project-section">
-    <ul class="line">
-      <Card
-        title="ASU Job application bot"
-        body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor"
-        href="test"
-      />
-      <Card
-        title="ASU Job application bot"
-        body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor"
-        href="test"
-      />
-    </ul>
-  </div>
-  <Footer/>
+  <Project/>
 </Layout>
 
 <style>
@@ -43,28 +23,6 @@ var darkMode = false;
     font-weight: 800;
     margin: 0;
     padding: 0;
-  }
-  .LogoBar {
-    display: flex;
-    padding: 3.625rem var(--main-padding, 8rem);
-    align-items: center;
-    gap: 0.625rem;
-    align-self: stretch;
-  }
-  .logo-box {
-    display: flex;
-    width: 6.25rem;
-    height: 6.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    border: 8px solid #f40076;
-    border-radius: 5px;
-  }
-  .logo {
-    font-size: 80px;
-    font-weight: 900;
-    color: #225dba;
   }
   .main-section {
     display: flex;
@@ -87,33 +45,5 @@ var darkMode = false;
     font-weight: 100;
     letter-spacing: 0.186rem;
     margin: 0;
-  }
-  .project-section {
-    display: flex;
-    padding: 8rem var(--main-padding, 8rem);
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    align-self: stretch;
-  }
-  .line {
-    display: flex;
-    align-items: flex-start;
-    gap: 5rem;
-    align-self: stretch;
-    list-style: none;
-    padding: 0;
-  }
-  @media screen and (max-width: 1450px) {
-    .time {
-      width: 20%;
-      height: 20%;
-      font-size: 3.5rem;
-      line-height: 5rem;
-      letter-spacing: 0.06rem;
-    }
-    .exp-card {
-      width: 15%;
-    }
   }
 </style>

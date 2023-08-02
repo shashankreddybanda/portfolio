@@ -1,39 +1,69 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 import "@fontsource-variable/exo";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Software Engineer" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/portfolio/logo.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Software Engineer" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+	<div class="LogoBar">
+		<div class="logo-box">
+		  <p class="logo">S</p>
+		</div>
+	  </div>
+    <slot />
+  <Footer />
+</body>
 </html>
 <style is:global>
-	html {
-		font-family: "Exo Variable", sans-serif;
-		background: #010f26;
-		color: #d5e4fa;
-		font-size: 16px;
-	}
-	body {
-		display: inline-flex;
-		padding: 0rem 0rem;
-		margin: 0%;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.0625rem;
-	}
+  html {
+    font-family: "Exo Variable", sans-serif;
+    background: #010f26;
+    color: #d5e4fa;
+    font-size: 16px;
+  }
+  body {
+    display: inline-flex;
+    padding: 0rem 0rem;
+    margin: 0%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.0625rem;
+	width: 100%;
+  }
+  .LogoBar {
+    display: flex;
+    padding: 3.625rem var(--main-padding, 8rem) 1.625rem var(--main-padding, 8rem);
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+  }
+  .logo-box {
+    display: flex;
+    width: 4.25rem;
+    height: 4.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: 4px solid #f40076;
+    border-radius: 5px;
+  }
+  .logo {
+    font-size: 60px;
+    font-weight: 900;
+    color: #225dba;
+  }
 </style>

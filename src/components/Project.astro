@@ -1,0 +1,89 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<div class="project-section">
+  <ul class="line">
+    <Card
+      title="ASU Job application bot"
+      body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor"
+      href="test"
+    />
+    <Card
+      title="ASU Job application bot"
+      body="lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor lorem ipsum del lor"
+      href="test"
+    />
+  </ul>
+  <div class="button-line">
+    <a href="/portfolio/Projects" class="button"
+      >All projects<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M5 12H19"
+          stroke="#E4EFFF"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <path
+          d="M12 5L19 12L12 19"
+          stroke="#E4EFFF"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg></a
+    >
+  </div>
+</div>
+<style>
+  .project-section {
+    display: flex;
+    padding: 8rem var(--main-padding, 8rem);
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+  }
+  .line {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    align-self: stretch;
+    list-style: none;
+    padding: 0;
+  }
+  .button-line {
+    display: flex;
+    padding: 0.625rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+  }
+  .button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    background: var(--project-main-primary-500, #003587);
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.125rem; /* 90% */
+    letter-spacing: 0.015rem;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 1200px) {
+    .line {
+      flex-direction: column;
+    }
+  }
+</style>

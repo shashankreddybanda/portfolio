@@ -73,27 +73,18 @@ const { href, title, body } = Astro.props;
     gap: 0.25rem;
     border-radius: 0.25rem;
     background: rgba(56, 136, 253, 0.2);
-    color: var(--project-main-primary-200, #3469BA);
+    color: var(--project-main-primary-200, #3469ba);
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 600;
     line-height: 0.875rem; /* 116.667% */
     letter-spacing: 0.009rem;
   }
-  @media screen and (max-width: 1450px) {
+  @media screen and (max-width: 1200px) {
     .project {
-      width: 20%;
-      padding: 1.5rem 1rem;
-      gap: 0.5rem;
-    }
-    .project-title {
-      margin: 0;
-      width: 8.9375rem;
-      height: 1.5625rem;
-      font-size: 1.25rem;
-      font-weight: 600;
-      line-height: 1.125rem;
-      letter-spacing: 0.015rem;
+      align-items: center;
+      flex-direction: column;
+      align-self: center;
     }
   }
 </style>
