@@ -14,17 +14,17 @@ var darkMode = false;
     </p>
   </div>
   <Exp />
-  <Project/>
+  <Project />
 </Layout>
 
 <style>
-	.main-section {
-	  display: flex;
-	  padding: var(--hero-top-padding, 8rem) min(var(--main-padding, 8rem), 8vw);
-	  flex-direction: column;
-	  align-items: flex-start;
-	  gap: 1.5rem;
-	}
+  .main-section {
+    display: flex;
+    padding: var(--hero-top-padding, 8rem) min(var(--main-padding, 8rem), 8vw);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
   .hi {
     font-size: 5rem;
     font-weight: 800;
@@ -36,7 +36,10 @@ var darkMode = false;
     font-weight: 700;
     letter-spacing: 0.062em;
     text-align: left;
-    color: #225dba;
+    background: linear-gradient(163deg, #225dba 0%, #f40076 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .hero-text {
     padding: 0;
