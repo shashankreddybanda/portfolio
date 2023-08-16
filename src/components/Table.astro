@@ -1,3 +1,7 @@
+---
+const { projects } = Astro.props;
+---
+
 <table class="tg">
   <colgroup>
     <col style="width: auto" />
@@ -11,21 +15,26 @@
       <th class="tg-0pky">Year</th>
       <th class="tg-0pky">Project</th>
       <th class="description">Description</th>
-      <th class="tg-0lax">Tech</th>
+      <!-- <th class="tg-0lax">Tech</th> -->
       <th class="tg-0lax">Link</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td class="year">2023</td>
-      <td class="project-title">WaitList</td>
-      <td class="description"
-        >An application for users to check-in digitally and recive notification
-        for theri turn</td
-      >
-      <td class="tags">test, test</td>
-      <td class="tg-0lax"><a href="https://www.google.com" target="_blank">Google.com</a></td>
-    </tr>
+    {
+      projects.map((project: any) => (
+        <tr>
+          <td class="year">{project.year}</td>
+          <td class="project-title">{project.name}</td>
+          <td class="description">{project.description}</td>
+          <!--<td class="tags">test, test</td>-->
+          <td class="tg-0lax">
+            <a href={project.homePage} target="_blank">
+              {project.homePage}
+            </a>
+          </td>
+        </tr>
+      ))
+    }
   </tbody>
 </table>
 <style>
@@ -71,8 +80,8 @@
     letter-spacing: 0.012rem;
   }
   @media screen and (max-width: 1200px) {
-    .description{
-        display: none;
+    .description {
+      display: none;
     }
   }
 </style>

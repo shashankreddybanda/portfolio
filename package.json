@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource-variable/exo": "^5.0.4",
     "@fontsource/twinkle-star": "^5.0.3",
-    "astro": "^2.6.4"
+    "astro": "^2.6.4",
+    "octokit": "^3.1.0"
   }
 }
